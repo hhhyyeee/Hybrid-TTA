@@ -2,7 +2,7 @@ import argparse
 import os
 
 import sys
-sys.path.append("/home/cvlab/workspace/hyewon/Hybrid-TTA") #!TBD
+sys.path.append("...") #!TBD
 
 import mmcv
 import torch
