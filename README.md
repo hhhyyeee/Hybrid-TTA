@@ -6,12 +6,13 @@
 
 <sup>1</sup> Ewha W. University
 
-<!-- Official source code for [**Hybrid-TTA: Continual Test-time Adaptation via Dynamic Domain Shift Detection**](https://arxiv.org/abs/2409.08566v2), **ICCV 2025**. -->
+Official source code for [**Hybrid-TTA: Continual Test-time Adaptation via Dynamic Domain Shift Detection**](https://arxiv.org/abs/2409.08566v2), **ICCV 2025**.
 
-🚨 **Source code of Hybrid-TTA will be updated soon.**
+<!-- 🚨 **Source code of Hybrid-TTA will be updated soon.** -->
 
 
 ## 🔔 News:
+* [2025-10-28]: Source code is released.
 * [2025-06-26]: We are happy to announce that **Hybrid-TTA** was accepted at [ICCV 2025](https://iccv.thecvf.com/virtual/2025/poster/2684).
 
 
@@ -19,7 +20,8 @@
 
 Continual Test Time Adaptation (CTTA) has emerged as a critical approach to bridge the domain gap between controlled training environments and real-world scenarios. Since it is important to balance the trade-off between adaptation and stabilization, many studies have tried to accomplish it by either introducing a regulation to fully trainable models or updating a limited portion of the models. This paper proposes **Hybrid-TTA**, a holistic approach that dynamically selects the instance-wise tuning method for optimal adaptation. Our approach introduces **Dynamic Domain Shift Detection (DDSD)**, which identifies domain shifts by leveraging temporal correlations in input sequences, and dynamically switches between Full or Efficient Tuning for effective adaptation toward varying domain shifts. To maintain model stability, **Masked Image Modeling Adaptation (MIMA)** leverages auxiliary reconstruction task for enhanced generalization and robustness with minimal computational overhead. Hybrid-TTA achieves *0.6%p* gain on the Cityscapes-to-ACDC benchmark dataset for semantic segmentation, surpassing previous state-of-the-art methods. It also delivers about 20-fold increase in FPS compared to the recently proposed fastest methods, offering a robust solution for real-world continual adaptation challenges.
 
-![Method Cover](assets/figure1_2_6.png)
+<!-- ![Method Cover](assets/figure1_2_6.png) -->
+![Method Cover](assets/iccv_poster.png)
 
 
 ## Prerequisite
