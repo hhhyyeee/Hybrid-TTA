@@ -21,3 +21,67 @@ Continual Test Time Adaptation (CTTA) has emerged as a critical approach to brid
 
 ![Method Cover](assets/figure1_2_6.png)
 
+
+## Prerequisite
+
+### 1) Setup Datasets
+We refer to [MMSegmentation](https://github.com/open-mmlab/mmsegmentation) for further instructions about the dataset structure.
+
+- **Cityscapes:**
+    Please download `leftImg8bit_trainvaltest.zip` and `gt_trainvaltest.zip` from [here](https://www.cityscapes-dataset.com/downloads/) and extract them to `{DATA_DIR}/cityscapes`.
+
+    Prepare the source dataset:
+    ```shell
+    python tools/convert_datasets/cityscapes.py {DATA_DIR}/cityscapes --out-dir data/cityscapes --nproc 8
+    ```
+
+- **ACDC:**
+    Please download `rgb_anon_trainvaltest.zip` and `gt_trainval.zip` from [here](https://acdc.vision.ee.ethz.ch/download) and extract them to `{DATA_DIR}/ACDC`.
+
+### 2) Download Checkpoints
+
+Please download Cityscapes pre-trained weights from [SegFormer GitHub](https://github.com/NVlabs/SegFormer?tab=readme-ov-file#evaluation), and save them in `./weights/` directory.
+
+
+### 3) Setup Environment
+
+```
+conda create -n hybrid-tta python=3.8
+
+pip install torch==1.9.1+cu111 torchvision==0.10.1+cu111 torchaudio==0.9.1 -f https://download.pytorch.org/whl/torch_stable.html
+
+pip install -U openmim
+
+mim install mmcv-full==1.7.2
+
+pip install mmengine==0.10.4 timm==0.4.12 kornia==0.7.2
+
+pip install -r requirements.txt
+```
+
+### 4) Preparations
+
+- Put project path in `sys.path.append("{PROJECT_DIR}")` on `scripts/ours.py`
+
+- Put data path (`{DATA_DIR}`) in dataset configuration file
+    - `./local_configs/_base_/datasets/acdc_960x540_repeat.new.py`
+
+
+- Create `./tmp/` directory
+    ```
+    mkdir ./tmp
+    ```
+
+## Execution
+```
+python scripts/ours.py local_configs/segformer/B5/segformer.b5.960x540.acdc.160k.new.py weights/segformer.b5.1024x1024.city.160k.pth --wandb 0
+```
+
+
+## Acknowledgements
+
+This project is based on the following open-source projects.
+
+* [MMSegmentation](https://github.com/open-mmlab/mmsegmentation)
+* [SegFormer](https://github.com/NVlabs/SegFormer)
+* [CoTTA](https://github.com/qinenergy/cotta?tab=readme-ov-file#segmentation-experiments)

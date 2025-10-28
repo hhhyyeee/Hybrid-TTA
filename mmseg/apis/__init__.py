@@ -1,0 +1,10 @@
+from .inference import inference_segmentor, init_segmentor, show_result_pyplot
+from .test import single_gpu_our
+from .train import get_root_logger, set_random_seed, train_segmentor
+
+__all__ = [
+    'get_root_logger', 'set_random_seed', 'train_segmentor', 'init_segmentor',
+    'inference_segmentor',
+    'show_result_pyplot',
+    'single_gpu_our',
+]
