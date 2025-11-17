@@ -13,7 +13,7 @@ Official source code for [**Hybrid-TTA: Continual Test-time Adaptation via Dynam
 
 ## 🔔 News:
 * [2025-10-28]: Source code is released.
-* [2025-06-26]: We are happy to announce that **Hybrid-TTA** was accepted at [ICCV 2025](https://iccv.thecvf.com/virtual/2025/poster/2684).
+* [2025-06-26]: We are happy to announce that **Hybrid-TTA** was accepted at [ICCV 2025](https://openaccess.thecvf.com/content/ICCV2025/html/Park_Hybrid-TTA_Continual_Test-time_Adaptation_via_Dynamic_Domain_Shift_Detection_ICCV_2025_paper.html).
 
 
 ## Abstract
