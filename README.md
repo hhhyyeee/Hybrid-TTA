@@ -79,6 +79,19 @@ pip install -r requirements.txt
 python scripts/ours.py local_configs/segformer/B5/segformer.b5.960x540.acdc.160k.new.py weights/segformer.b5.1024x1024.city.160k.pth --wandb 0
 ```
 
+## Citation
+Consider citing us if you find our paper useful in your research. 🥰
+```
+@InProceedings{Park_2025_ICCV,
+    author    = {Park, Hyewon and Park, Hyejin and Ko, Jueun and Min, Dongbo},
+    title     = {Hybrid-TTA: Continual Test-time Adaptation via Dynamic Domain Shift Detection},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2025},
+    pages     = {2877-2886}
+}
+```
+
 
 ## Acknowledgements
 
