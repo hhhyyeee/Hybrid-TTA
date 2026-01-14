@@ -2,9 +2,7 @@
 
 [![Project Website](https://img.shields.io/badge/Project-Website-blue)](https://sites.google.com/view/hybrid-tta/home)  [![arXiv](https://img.shields.io/badge/arXiv-2409.08566-b31b1b.svg)](https://arxiv.org/abs/2409.08566v2)
 
-[Hyewon Park](https://github.com/hhhyyeee)<sup>1</sup>, [Hyejin Park](https://github.com/kunsaram01)<sup>1</sup>, [Jueun Ko](https://github.com/0ju-un)<sup>1</sup>, Dongbo Min<sup>1</sup>
-
-<sup>1</sup> Ewha W. University
+[Hyewon Park](https://github.com/hhhyyeee), [Hyejin Park](https://github.com/kunsaram01), [Jueun Ko](https://github.com/0ju-un), Dongbo Min
 
 Official source code for [**Hybrid-TTA: Continual Test-time Adaptation via Dynamic Domain Shift Detection**](https://arxiv.org/abs/2409.08566v2), **ICCV 2025**.
 
